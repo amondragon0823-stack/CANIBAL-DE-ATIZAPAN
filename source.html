@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EL CANIVAL DE ATIZAPAN</title>
+    <link rel="stylesheet" href="styles.css">
+<style type="text/css">
+/* Ocultar secciones */
+.oculto {
+    display: none;
+}
+
+/* ============================
+        FONDO CRIMINOLÓGICO
+   ============================ */
+
+body {
+    background: radial-gradient(circle at center,
+        #062106 0%,
+        #0a0a0a 40%,
+        #000000 100%);
+    color: #39ff14; /* Verde neón */
+    font-family: Arial, sans-serif;
+
+    /* Efecto de respiración criminológica */
+    animation: brilloCrimi 6s infinite alternate ease-in-out;
+}
+
+@keyframes brilloCrimi {
+    0% {
+        background: radial-gradient(circle at center,
+            #062106 0%,
+            #0a0a0a 40%,
+            #000000 100%);
+    }
+    100% {
+        background: radial-gradient(circle at center,
+            #0b3b0b 0%,
+            #0a0a0a 40%,
+            #000000 100%);
+    }
+}
+
+/* ============================
+          BOTONES DEL MENÚ
+   ============================ */
+
+.menu-btns {
+    background: #0a0a0a; /* Negro criminológico */
+    padding: 15px;
+    text-align: center;
+    border-bottom: 4px solid #39ff14; /* Verde neón tipo criminalística */
+    box-shadow: 0 0 10px #39ff14;
+}
+
+/* Botones */
+.menu-btns button {
+    background: #062106; /* Verde evidencia */
+    border: 2px solid #39ff14; /* Verde neón */
+    color: #39ff14;
+    padding: 10px 18px;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .3s;
+    border-radius: 6px;
+    text-shadow: 0 0 5px #39ff14;
+}
+
+/* Hover */
+.menu-btns button:hover {
+    background: #0b3b0b;
+    transform: scale(1.07);
+    box-shadow: 0 0 12px #39ff14;
+}
+
+/* Activo */
+.menu-btns button:active {
+    background: #1a1a1a;
+    border-color: #8b0000; /* Rojo sangre */
+    color: #ff1a1a;
+    box-shadow: 0 0 12px #8b0000;
+}
+
+</style>
+<script>
+function mostrar(seccionID) {
+    // Ocultar todas
+    document.querySelectorAll(".seccion").forEach(sec => {
+        sec.classList.add("oculto");
+    });
+
+    // Mostrar la elegida
+    document.getElementById(seccionID).classList.remove("oculto");
+}
+
+</script>
+</head>
+
+<body>
+
+<header>
+    <h1>EL CANIVAL DE ATIZAPAN</h1>
+    <p class="subtitulo">Caso: El Caníbal de Atizapán</p>
+</header>
+
+<!-- BOTONES -->
+<nav class="menu-btns">
+    <button onclick="mostrar('perfil')">Perfil</button>
+    <button onclick="mostrar('timeline')">Línea del Tiempo</button>
+    <button onclick="mostrar('factores')">Factores</button>
+    <button onclick="mostrar('trastornos')">Trastornos</button>
+</nav>
+
+<div class="contenedor">
+
+    <!-- PERFIL -->
+    <div id="perfil" class="seccion">
+        <h2 class="seccion-titulo">Perfil Personal</h2>
+
+        <div class="perfil">
+            <p class="evidencia">
+                <strong>Identidad y datos biográficos</strong><br><br>
+
+                Nombre completo: Andrés Filomeno Mendoza Celis.<br>
+                Fecha de nacimiento: 29 de noviembre de 1947.<br>
+                Lugar de origen: Zimatlán de Álvarez, Oaxaca.<br>
+                Edad al momento de su detención: 72 años.<br><br>
+
+                <strong>Infancia y primeros años</strong><br><br>
+                Creció en un ambiente de carencias económicas.<br>
+                La relación con su familia era distante y poco afectiva.<br>
+                Se reporta que desde joven mostró conductas de aislamiento.<br>
+                No había expresiones afectivas dentro del hogar.<br>
+                No se conocen vínculos profundos con familiares o amigos.<br><br>
+
+                <strong>Vida social y reputación comunitaria</strong><br><br>
+                Vivía en Atizapán desde hace décadas.<br>
+                Vecinos lo describían como “tranquilo”, “amable” y “educado”.<br>
+                Participó como presidente del Consejo de Participación Ciudadana.<br>
+                Organizaba reuniones vecinales, ayudaba en eventos y daba consejos.<br>
+                Nunca levantó sospechas; se veía como “un viejito bueno”.<br><br>
+
+                <strong>Rutina diaria</strong><br><br>
+                Tenía una vida extremadamente rutinaria:<br>
+                — Se levantaba temprano.<br>
+                — Caminaba por la colonia todos los días.<br>
+                — Compraba comida en los mismos puestos.<br>
+                — Leía periódicos locales.<br>
+                — Pasaba horas organizando objetos en su casa.<br>
+                — Guardaba ropa, zapatos y accesorios de mujeres de forma meticulosa.<br><br>
+
+                <strong>Trabajo y habilidades</strong><br><br>
+                Fue carnicero por años, con experiencia en corte, despiece y manejo de cuchillos.<br>
+                Esa habilidad fue clave para la forma en que desmembraba a sus víctimas.<br><br>
+
+                <strong>Modus operandi y conducta criminal</strong><br><br>
+                Su patrón se repetía:<br>
+                — Conocía a mujeres vulnerables.<br>
+                — Las invitaba a cenar o beber.<br>
+                — Las llevaba a su casa.<br>
+                — Las embriagaba para reducir resistencia.<br>
+                — Las atacaba con un arma punzocortante.<br>
+                — Desmembraba el cuerpo con precisión quirúrgica.<br>
+                — Enterraba restos bajo el piso o los quemaba.<br>
+                — Guardaba objetos personales como “trofeos”.<br><br>
+
+                <strong>Objetos encontrados en su vivienda</strong><br><br>
+                — Más de 4,000 fragmentos óseos.<br>
+                — 29 identificaciones oficiales de mujeres.<br>
+                — Bolsos, zapatos, ropa interior y blusas.<br>
+                — Más de 20 cuadernos con nombres, fechas y descripciones.<br>
+                — Videos grabados por él donde interactuaba con víctimas.<br><br>
+
+                <strong>Reconocimientos escritos en su libreta</strong><br><br>
+                Incluía notas como:<br>
+                — “Pierna: 4 kilos”.<br>
+                — “Pechos: 2 kilos”.<br>
+                — Nombres de víctimas y fechas exactas.<br>
+                — Dibujos rudimentarios del cuerpo humano.<br><br>
+
+                <strong>Consecuencias legales</strong><br><br>
+                Se le dictaron múltiples sentencias de 55, 92 y hasta cadena perpetua.<br>
+                Catalogado como uno de los feminicidas seriales más violentos de México.<br>
+                En 2025 fue trasladado al hospital por deterioro de salud.
+            </p>
+        </div>
+    </div>
+
+    <!-- LÍNEA DEL TIEMPO -->
+    <div id="timeline" class="seccion oculto">
+        <h2 class="seccion-titulo">Línea del Tiempo</h2>
+
+        <div class="timeline">
+
+            <div class="evento">
+                <h3>2021</h3>
+                <p class="evidencia">
+                    — Desaparición de Reyna González Amador.<br>
+                    — Arresto del sujeto tras hallazgo del cuerpo.<br>
+                    — Excavaciones revelan miles de restos óseos.<br>
+                    — Declaraciones en audiencia donde acepta hechos.<br>
+                    — Se confirman víctimas acumuladas por décadas.<br>
+                </p>
+            </div>
+
+            <div class="evento">
+                <h3>2022</h3>
+                <p class="evidencia">
+                    — Identificación de 6 víctimas por ADN.<br>
+                    — Sentencia de prisión vitalicia.<br>
+                    — Estreno de la serie “Caníbal: Indignación Total”.<br>
+                    — La serie alcanza récord de audiencia nacional.<br>
+                    — Críticas por revictimización mediática.<br>
+                </p>
+            </div>
+
+            <div class="evento">
+                <h3>2023</h3>
+                <p class="evidencia">
+                    — Nuevo proceso judicial por más víctimas.<br>
+                    — Condena de 92 años por caso de mujer y niño.<br>
+                    — Reiteradas sentencias de 55 años adicionales.<br>
+                    — Peritajes confirman modus operandi repetitivo.<br>
+                </p>
+            </div>
+
+            <div class="evento">
+                <h3>2024</h3>
+                <p class="evidencia">
+                    — Se revisan restos nuevamente con tecnología avanzada.<br>
+                    — Avances de genética forense permiten identificar más mujeres.<br>
+                    — Crecen críticas hacia autoridades por omisiones previas.<br>
+                </p>
+            </div>
+
+            <div class="evento">
+                <h3>2025</h3>
+                <p class="evidencia">
+                    — El sujeto es hospitalizado por problemas de salud.<br>
+                    — Se confirma que varias víctimas nunca fueron buscadas por autoridades.<br>
+                    — Se actualiza el expediente a más de 33 posibles víctimas.<br>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FACTORES -->
+    <div id="factores" class="seccion oculto">
+        <h2 class="seccion-titulo">Factores del Caso</h2>
+
+        <ul>
+
+            <li class="evidencia">
+                <strong>Factores endógenos (internos)</strong><br><br>
+
+                — Rasgos psicopáticos: frialdad, encanto superficial, manipulación.<br>
+                — Déficit profundo de empatía.<br>
+                — Distorsiones cognitivas que justificaban sus actos.<br>
+                — Fantasías de poder desde joven.<br>
+                — Dificultad para generar vínculos afectivos reales.<br>
+                — Tolerancia elevada al sufrimiento ajeno.<br>
+            </li>
+
+            <li class="evidencia">
+                <strong>Factores exógenos (externos)</strong><br><br>
+
+                — Vivía solo en un domicilio sin revisiones ni vigilancia.<br>
+                — La comunidad confiaba plenamente en él.<br>
+                — Las víctimas eran mujeres en situaciones vulnerables.<br>
+                — Impunidad prolongada por fallas policíacas.<br>
+                — Contexto nacional de violencia contra la mujer.<br>
+                — Ausencia de protocolos fuertes de búsqueda.<br>
+                — Sistema judicial saturado e ineficiente.<br>
+            </li>
+
+            <li class="evidencia">
+                <strong>Crimino-impelentes (motores del delito)</strong><br><br>
+
+                — Necesidad obsesiva de control total.<br>
+                — Impulso compulsivo hacia la violencia.<br>
+                — Reforzamiento por impunidad durante años.<br>
+                — Fantasías mórbidas de dominio y destrucción.<br>
+                — Motivación emocional: descarga de frustraciones internas.<br>
+                — Ritualización del proceso delictivo.<br>
+            </li>
+
+        </ul>
+    </div>
+
+    <!-- TRASTORNOS -->
+    <div id="trastornos" class="seccion oculto">
+        <h2 class="seccion-titulo">Trastornos y Perfil Psicológico</h2>
+
+        <ul>
+
+            <li class="evidencia">
+                <strong>Rasgos narcisistas</strong><br><br>
+
+                — Necesidad de sentirse superior.<br>
+                — Baja empatía.<br>
+                — Creencia de “derecho” sobre víctimas.<br>
+                — Uso instrumental de personas.<br>
+                — Sensación de grandiosidad encubierta.<br>
+            </li>
+
+            <li class="evidencia">
+                <strong>Trastorno Antisocial de la Personalidad</strong><br><br>
+
+                — Incumplimiento sistemático de normas y leyes.<br>
+                — Mentira constante.<br>
+                — Impulsividad.<br>
+                — Falta total de culpa.<br>
+                — Conductas delictivas repetitivas.<br>
+                — Hostilidad emocional interna.<br>
+            </li>
+
+            <li class="evidencia">
+                <strong>Conductas compulsivas</strong><br><br>
+
+                — Necesidad de repetir patrones para aliviar tensión interna.<br>
+                — Ritualización del despiece y ocultamiento.<br>
+                — Recolección de “trofeos” como objetos de víctimas.<br>
+                — Documentación meticulosa en libretas.<br>
+                — Incremento de frecuencia delictiva con el tiempo.<br>
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+
+<footer>
+    Universidad del Valle de México
+</footer>
+
+<script src="script.js"></script>
+
+
+
+</body></html>
